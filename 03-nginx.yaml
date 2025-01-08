@@ -1,0 +1,17 @@
+- name: Play book for the installation of nginx and start the nginx service
+  hosts:  web
+  become: yes
+  tasks: 
+  - name: install nginx
+    ansible.builtin.package:
+      name: nginx
+      state:  present
+  - name: start nginx
+    ansible.builin.service: 
+      name: nginx
+      state:  started
+
+
+
+
+    
