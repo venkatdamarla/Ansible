@@ -5,7 +5,13 @@
     COURSE: "DevOps with AWS"
     DURATION: 120hours
     TRAINER: "Venkata"
-  tasks:  
-    - name:  Print the Global level variables
+  tasks:           
+    - name: Print the Local level\Task variables
+      vars:
+      COURSE: "ANSIBLE"      
       ansible.builtin.debug:
         msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+    
+    - name:  Print the Global level variables                 
+      ansible.builtin.debug:
+        msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"   
