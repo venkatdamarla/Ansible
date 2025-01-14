@@ -11,6 +11,8 @@
     - name: Print the variables from local
       vars: 
         COURSE: "ANSIBLE"
+        DURATION: "1 week"
+        TRAINER:  "Gayatri"
       ansible.builtin.debug:
         msg: " Course is {{ COURSE }} Duration is {{ DURATION }} Trainer is {{ TRAINER }}"
  
