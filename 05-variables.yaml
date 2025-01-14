@@ -1,0 +1,11 @@
+- name: Variables playbook
+  hosts:  local
+  connection: local #managing its own node and no need of credentials
+  vars: # This is the place where we can declare the global level variables\ Playbook variables
+    COURSE: "DevOps with AWS"
+    DURATION: 120hours
+    TRAINER: "Venkata"
+  tasks:  
+    -name:  "Print the Global level variables"
+      ansible.builtin.debug:
+        msg: "Course is {{ COURSE}}, Duration is {{ DURATION}}, Trainer is {{ TRAINER}} "
