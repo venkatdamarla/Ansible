@@ -6,6 +6,6 @@
     DURATION: 120hours
     TRAINER: "Venkata"
   tasks:  
-    -name:  Print the Global level variables
-    ansible.builtin.debug:
+    - name:  Print the Global level variables
+      ansible.builtin.debug:
         msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
