@@ -6,7 +6,7 @@
     DURATION: 120hours
     TRAINER: "Venkata"
   tasks:           
-    - name: Print the Local level\Task variables
+    - name: Print the Local level Task variables
       vars:
       COURSE: "ANSIBLE"      
       ansible.builtin.debug:
