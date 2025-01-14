@@ -6,8 +6,7 @@
   tasks:
     - name:  Print the variables from the gloal file
       ansible.builtin.debug:  
-        msg: " Course is {{ COURSE }} Duration is {{ DURATION }} Trainer is {{ TRAINER }}"
-
+        msg: " Course is {{ COURSE }} Duration is {{ DURATION }} Trainer is {{ TRAINER }}"     
     - name: Print the variables from local
       vars: 
         COURSE: "ANSIBLE"
