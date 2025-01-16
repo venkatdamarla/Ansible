@@ -1,0 +1,7 @@
+- name: Variables declaration in inventory at group level
+  hosts:  web
+  tasks:
+    - name: Print the variable values
+      ansible.builtin.debug:
+        msg:  "Course Name {{ course}} Duration {{ duration }} Trainer {{ trainer }}"
+
