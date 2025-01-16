@@ -4,7 +4,7 @@
   vars_prompt:
     - name: course
         prompt: Enter the course name
-        private: false
+        private:  false
     - name: duration
         prompt: Enter the duration of the course
         private:  false
