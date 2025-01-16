@@ -1,4 +1,4 @@
-- name: Data Types
+- name: DevOps course information
   hosts:  local
   connection: local
   vars:
